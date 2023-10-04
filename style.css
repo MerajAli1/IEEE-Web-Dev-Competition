@@ -1,0 +1,279 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.product-row{
+    margin-bottom: 10vh;
+    display: flex;
+    align-items: center;
+}
+
+.product-row > div > ul > li {
+      margin-right: 1.9vw;
+}
+
+.product-row > div > ul > li > a {
+      color: #333;
+      font-size: 1.08vw;
+      letter-spacing: 0.16vw;
+
+}
+
+.product-row > div:nth-child(2) {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.product-row > div:nth-child(2) > ul {
+    margin:0px;
+    
+}
+
+
+.product-row > div:nth-child(2) > ul > li {
+    border: 1px solid grey;
+    padding: 1vh 2vw;
+    margin: 0px;
+}
+
+.product-row > div:nth-child(2) > ul > li > a > i {
+    font-size: 1.2vw;
+    margin-right: 8px;
+}
+
+.product-row2 > div > p {
+    color: #999;
+    margin-top:6px;
+    margin-bottom:6px;
+}
+
+.product-row2 > div > span {
+    color: #666;
+    font-size: 1vw;
+}
+.product-row2 > div > div:nth-child(1) {
+    overflow: hidden;
+    position:relative;
+}
+
+.product-row2 > div > div:nth-child(1) > div{
+    position: absolute;
+    bottom: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+-webkit-transition: all 400ms ease-out;
+  -moz-transition: all 400ms ease-out;
+  -o-transition: all 400ms ease-out;
+  -ms-transition: all 400ms ease-out;
+  transition: all 400ms ease-out;
+
+}
+
+.product:hover > .content {
+  opacity: 1;
+}
+
+.load-more{
+    display: flex;
+    justify-content: center;
+}
+
+.load-more > button{
+    padding: 2.2vh 4vw;
+    border: none;
+    border-radius: 25px;
+    font-weight: 600;
+   
+}
+
+.load-more > button:hover{
+    background-color:#696c7b;
+    color:white;
+}
+
+.product-row2 > div > div:nth-child(1) > div > button {
+    border: none;
+    background-color: white;
+    padding: 4% 10%;
+    border-radius: 50px;
+    font-size: 2.3vh;
+}
+
+
+.image-hover-effect{
+  transition: transform .2s; /* Animation */
+}
+
+.image-hover-effect:hover {
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.Cardheight {
+    height: 50vh;
+}
+
+.transition:hover{
+    transform: scale(0.9);
+    transition: 0.5s;
+}
+.transition2:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.header-paragraph{
+    font-family: 'Playfair Display';
+    font-size: 5vw;
+    line-height: 1.1;
+    text-transform: uppercase;
+
+}
+@media only screen and (max-width: 768px) {
+
+    /* For mobile phones: */
+    .height {
+        height: 37vh;
+    }
+    .fontSize{
+        font-size: 25px;
+        font-weight: bold;
+        text-shadow: 10px 10px 15px rgb(255, 255, 255);
+    }
+    
+    .slider_section{
+      padding: 0px;
+    background-color: #eae9e3;
+    padding-top: 21vh;
+    text-align: center;
+    }
+    .slider_section .detail-box{
+          margin: 15vh 0 !important;
+    }
+    
+    .slider_section .detail-box a{
+        width: 50vw !important;
+    }
+    
+    .detail-box{
+        text-align: -webkit-center;
+    }
+    
+    .heading_container h2{
+    font-size:8vw;
+    }
+    
+    .product-row > div > ul > li > a{
+         font-size: 3.08vw;
+    }
+    
+    .product-row > div > ul > li{
+           margin-right: 3.9vw;
+    }
+    
+    .product-row2 > div > p{
+        font-size: 5vw;
+    }
+    
+    .product-row2 > div > span{
+        font-size: 5vw;
+    }
+}
+
+
+
+/* Carosel Section Starts*/
+.slider_section .slider_container {
+    color: #fefefe;
+  background-color: #eae9e3;
+    padding: 0px 0vw !important;
+    border-radius: 0 0 15px 15px;
+  }
+  
+  .slider_section .row {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .slider_section .img-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0px;
+  }
+  
+  .slider_section .img-box img {
+    width: 100%;
+  }
+  
+  .slider_section .detail-box {
+    padding-left: 0px;
+    margin: 0px 0px;
+    margin-top: 80px;
+  }
+  
+  .slider_section .detail-box h1 {
+    font-weight: bold;
+    font-size: 2.0rem;
+    margin-bottom: 10px;
+  }
+  
+  .slider_section .detail-box a {
+    display: inline-block;
+    padding: 1.5vh 0rem;
+    width: 17vw;
+    border-radius: 50px;
+    background-color: #c8a832;
+    color: #ffffff;
+    border: 1px solid #c8a832;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    margin-top: 25px;
+    text-transform: uppercase;
+  }
+  
+  .slider_section .detail-box a:hover {
+    background-color: transparent;
+    color: #c8a832;
+  }
+  
+  .slider_section .carousel_btn-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #ffffff;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    bottom: -25px;
+    left: 5%;
+    padding: 7px 10px;
+    border-radius: 5px 5px 0 0;
+  }
+  
+  .slider_section .carousel_btn-box img {
+    margin: 0 10px;
+  }
+  
+  .slider_section .carousel_btn-box .carousel-control-prev,
+  .slider_section .carousel_btn-box .carousel-control-next {
+    position: unset;
+    height: 25px;
+    width: 25px;
+    background-repeat: no-repeat;
+    opacity: 1;
+    background-position: center;
+    color: #000000;
+    font-size: 14px;
+  }
+  
+
+/* Carosel Section ends */
